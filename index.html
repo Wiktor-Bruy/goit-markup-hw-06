@@ -14,7 +14,7 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>homework-05</title>
+    <title>homework-06</title>
   </head>
 
   <body>
@@ -47,6 +47,11 @@
             </li>
           </ul>
         </address>
+        <div class="mobil-menu-box">
+          <svg class="mobil-menu" width="24" height="24">
+            <use href="./images/icons.svg#menu"></use>
+          </svg>
+        </div>
       </div>
     </header>
 
@@ -121,6 +126,7 @@
             <li class="photo">
               <img
                 class="photo-team"
+                srcset="./images/Mark.jpg 1x, ./images/Mark@x2.jpg 2x"
                 src="./images/Mark.jpg"
                 alt="Photo Mark Guerrero"
                 width="264"
@@ -163,6 +169,7 @@
             <li class="photo">
               <img
                 class="photo-team"
+                srcset="./images/Tom.jpg 1x, ./images/Tom@x2.jpg 2x"
                 src="./images/Tom.jpg"
                 alt="Photo Tom Ford"
                 width="264"
@@ -205,6 +212,7 @@
             <li class="photo">
               <img
                 class="photo-team"
+                srcset="./images/Camila.jpg 1x, ./images/Camila@x2.jpg 2x"
                 src="./images/Camila.jpg"
                 alt="Photo Camila Garcia"
                 width="264"
@@ -247,6 +255,7 @@
             <li class="photo">
               <img
                 class="photo-team"
+                srcset="./images/Daniel.jpg 1x, ./images/Daniel@x2.jpg 2x"
                 src="./images/Daniel.jpg"
                 alt="Photo Daniel Wilson"
                 width="264"
@@ -298,6 +307,7 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="./images/Banking.jpg 1x, ./images/Banking@x2.jpg 2x"
                   src="./images/Banking.jpg"
                   alt="Banking App Image"
                   width="360"
@@ -317,6 +327,7 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="./images/Cashless.jpg 1x, ./images/Cashless@x2.jpg 2x"
                   src="./images/Cashless.jpg"
                   alt="Cashless Payment Image"
                   width="360"
@@ -336,6 +347,10 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="
+                    ./images/Meditation.jpg    1x,
+                    ./images/Meditation@x2.jpg 2x
+                  "
                   src="./images/Meditation.jpg"
                   alt="Meditaion App Image"
                   width="360"
@@ -355,6 +370,7 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="./images/Taxi.jpg 1x, ./images/Taxi@x2.jpg 2x"
                   src="./images/Taxi.jpg"
                   alt="Taxi Service Image"
                   width="360"
@@ -374,6 +390,7 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="./images/Screen.jpg 1x, ./images/Screen@x2.jpg 2x"
                   src="./images/Screen.jpg"
                   alt="Screen Illustrations Image"
                   width="360"
@@ -393,6 +410,7 @@
               <div class="text-slate">
                 <img
                   class="photo-port"
+                  srcset="./images/Online.jpg 1x, ./images/Online@x2.jpg 2x"
                   src="./images/Online.jpg"
                   alt="Online Courses Image"
                   width="360"
@@ -556,6 +574,62 @@
           <button class="but-form" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <div class="menu-overlay">
+      <nav class="navigat">
+        <ul class="list-nav">
+          <li id="activ-m">
+            <a class="link-nav" href="./index.html">Studio</a>
+          </li>
+          <li><a class="link-nav" href="#">Portfolio</a></li>
+          <li><a class="link-nav" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="contact-mobil">
+        <ul class="contakt">
+          <li>
+            <a class="link-addres" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="link-addres" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="soc-list">
+        <li class="soc-list-item">
+          <a class="soc-link" href="#" target="_blank">
+            <svg class="soc-icon" width="16" height="16">
+              <use href="./images/icons.svg#inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list-item">
+          <a class="soc-link" href="#" target="_blank">
+            <svg class="soc-icon" width="16" height="16">
+              <use href="./images/icons.svg#tvit"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list-item">
+          <a class="soc-link" href="#" target="_blank">
+            <svg class="soc-icon" width="16" height="16">
+              <use href="./images/icons.svg#face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="soc-list-item">
+          <a class="soc-link" href="#" target="_blank">
+            <svg class="soc-icon" width="16" height="16">
+              <use href="./images/icons.svg#in-in"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
