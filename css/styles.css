@@ -460,9 +460,9 @@ button {
 .menu-overlay {
   position: relative;
   margin: 0 auto;
-  max-width: 288px;
+  max-width: 320px;
   height: 100%;
-  padding: 72px 0 40px 0;
+  padding: 72px 24px 40px 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -546,6 +546,9 @@ button {
 }
 .menu-overlay .soc-list {
   gap: 40px;
+}
+.menu-overlay .soc-list-item {
+  flex-shrink: 0;
 }
 @media (min-width: 768px) {
   .mod-menu-overlay {
