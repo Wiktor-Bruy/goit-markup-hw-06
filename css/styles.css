@@ -28,8 +28,7 @@ img {
   object-fit: cover;
 }
 .container {
-  max-width: 1158px;
-  min-width: 320px;
+  max-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -58,7 +57,8 @@ button {
 }
 .top-line .container {
   display: flex;
-  padding: 16px;
+  padding-bottom: 16px;
+  padding-top: 16px;
   justify-content: space-between;
   align-items: center;
 }
@@ -113,11 +113,10 @@ button {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  max-width: 1440px;
-  height: 432px;
+  max-width: 320px;
   margin: 0 auto;
 }
-@media (min-rosolution: 2x) {
+@media (min-resolution: 2x) {
   .top-fon {
     background-image: linear-gradient(
         to bottom,
@@ -133,6 +132,8 @@ button {
   flex-direction: column;
   align-items: center;
   height: 100%;
+  padding-bottom: 72px;
+  padding-top: 72px;
 }
 .top-title {
   color: #ffffff;
@@ -313,6 +314,8 @@ button {
 }
 .port-text {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 @media (max-width: 1157px) {
   .port-item {
@@ -447,9 +450,9 @@ button {
   height: 100%;
   z-index: 999;
   background-color: rgba(46, 47, 66, 0.4);
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  pointer-events: none;
+  pointer-events: none; */
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -462,6 +465,7 @@ button {
   background-color: #fcfcfc;
   padding: 72px 16px 40px 16px;
 }
+
 .mod-menu-overlay.is-open {
   opacity: 1;
   visibility: visible;
@@ -531,6 +535,9 @@ button {
   letter-spacing: 0.02em;
   color: inherit;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#tel-ack .link-addres {
+  color: #404bbf;
 }
 .link-addres:hover,
 .link-addres:focus,
@@ -740,7 +747,11 @@ input {
 /*-----------------------------Header-----------------------------------------*/
 @media (min-width: 768px) {
   .top-line .container {
-    padding: 0 15px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .container {
+    max-width: 768px;
   }
   .mobil-menu-box {
     position: absolute;
@@ -808,9 +819,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero.jpg);
-    height: 436px;
+    max-width: 768px;
   }
-  @media (min-rosolution: 2x) {
+  @media (min-resolution: 2x) {
     .top-fon {
       background-image: linear-gradient(
           to bottom,
@@ -820,9 +831,13 @@ input {
         url(../images/hero@x2.jpg);
     }
   }
+  .top-fon .container {
+    padding-bottom: 112px;
+    padding-top: 112px;
+  }
   .top-title {
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
     margin-bottom: 36px;
@@ -856,6 +871,9 @@ input {
     column-gap: 24px;
     row-gap: 72px;
   }
+  .port-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
 
   /*---------------------------------Footer-------------------------------------*/
   .down-line .container {
@@ -863,7 +881,11 @@ input {
     flex-wrap: wrap;
     align-items: flex-start;
     column-gap: 24px;
-    padding-left: 108px;
+  }
+  @media (max-width: 1157px) {
+    .down-line .container {
+      max-width: 527px;
+    }
   }
   .down-line .logo-box {
     max-width: 264px;
@@ -889,12 +911,17 @@ input {
   .modal {
     width: 408px;
     min-height: 584px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 /*---------------------------------------------------------------laptop-version*/
 @media (min-width: 1158px) {
   /*-------------------------------Header--------------------------------------*/
+  .container {
+    max-width: 1158px;
+  }
   .navigat {
     gap: 76px;
   }
@@ -902,10 +929,18 @@ input {
     flex-direction: row;
     gap: 40px;
   }
+  .link-addres {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 
   /*-------------------------------Section-1-------------------------------------*/
   .top-fon {
-    height: 600px;
+    max-width: 1440px;
+  }
+  .top-fon .container {
+    padding-bottom: 188px;
+    padding-top: 188px;
   }
   .top-title {
     margin-bottom: 46px;
@@ -982,11 +1017,7 @@ input {
   }
 
   /*-----------------------------------Footer-----------------------------------*/
-  .down-line {
-    padding: 100px 156px;
-  }
   .down-line .container {
-    padding: 0;
     flex-wrap: nowrap;
     gap: 0;
   }
