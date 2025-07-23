@@ -30,8 +30,8 @@ img {
 }
 .container {
   max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -521,11 +521,13 @@ button {
 #activ-m .link-nav {
   color: #404bbf;
 }
+.contact-mobil {
+  margin-bottom: 48px;
+}
 .contakt {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 .link-addres {
   font-style: normal;
@@ -931,6 +933,8 @@ input {
   /*-------------------------------Header--------------------------------------*/
   .container {
     max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .navigat {
     gap: 76px;
