@@ -42,11 +42,16 @@ function submit(event) {
   const mail = form.elements.us_mail.value.trim();
   const phone = form.elements.phone.value.trim();
   const name = form.elements.user_name.value.trim();
-  const agre = form.elements.user_privacy.value;
-  console.log(agre);
+  const agre = form.elements.user_privacy.checked;
   const isDigitsOnly = /^\d+$/.test(phone);
 
-  if (agre !== true) {
+  if (
+    agre !== true ||
+    mail === '' ||
+    name === '' ||
+    !isDigitsOnly ||
+    phone === ''
+  ) {
     window.alert(
       'Not all form fields are filled in correctly. Please double-check your information.'
     );
